@@ -1,0 +1,17 @@
+*{box-sizing: border-box;}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    button:focus {
+        outline: none;
+        @apply ring-2 ring-gray-300 ring-offset-4 ring-offset-yellow-100;
+    }
+}
+@layer components {
+    .btn {
+        @apply bg-yellow-400 font-bold w-full px-4 py-2 rounded-lg;
+    }
+}
